@@ -76,9 +76,10 @@
     PB: { sistema: 'SAGRES', tribunal: 'TCE-PB', nome: 'Paraíba' },
     PE: { sistema: 'SAGRES', tribunal: 'TCE-PE', nome: 'Pernambuco' },
     RN: { sistema: 'SIAI', tribunal: 'TCE-RN', nome: 'Rio Grande do Norte' },
-    PI: { sistema: 'SAGRES', tribunal: 'TCE-PI', nome: 'Piauí' }
+    PI: { sistema: 'SAGRES', tribunal: 'TCE-PI', nome: 'Piauí' },
+    MA: { sistema: 'SINC', tribunal: 'TCE-MA', nome: 'Maranhão' }
   };
-  var NOMES = { 'ceara': 'CE', 'paraiba': 'PB', 'pernambuco': 'PE', 'rio grande do norte': 'RN', 'piaui': 'PI' };
+  var NOMES = { 'ceara': 'CE', 'paraiba': 'PB', 'pernambuco': 'PE', 'rio grande do norte': 'RN', 'piaui': 'PI', 'maranhao': 'MA' };
   function setUF(uf, manual) {
     var t = TCE[uf]; if (!t) return;
     document.querySelectorAll('[data-tce="sistema"]').forEach(function (e) { e.textContent = t.sistema; });
